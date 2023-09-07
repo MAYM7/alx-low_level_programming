@@ -1,2 +1,1 @@
-# alx-low_level_programming
-I'm now a ALX Student, this is my first repository as a full-stack engineer
+this is where we learn how to basiclly code in C
