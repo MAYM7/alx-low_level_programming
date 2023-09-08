@@ -9,9 +9,11 @@
 
 int main(void)
 {
-	for (int i = 97; i <= 122; i++)
+	char a[26] = "abcdefghijklmnopqrstuvwxyz";
+
+	for (int i = 0; i < 26; i++)
 	{
-		putchar(i);
+		putchar(a(i));
 	}
 	putchar('\n');
 	return (0);
