@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	char a[16] = "123456789abcdef";
+	char a[16] = "0123456789abcdef";
 	int i;
 
 	for (i = 0; i < 16; i++)
