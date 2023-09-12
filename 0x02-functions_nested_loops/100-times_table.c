@@ -5,7 +5,7 @@
  * starting with 0.
  * @n: number of tables.
  */
-void print_time_tables(int n)
+void print_times_tables(int n)
 {
 	int i, j, k;
 
