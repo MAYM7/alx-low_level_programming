@@ -15,12 +15,12 @@ void print_number(int n)
 
 	int d, j;
 
-	while (d = 1; d <= n / 10)
+	for (d = 1; d <= n / 10)
 	{
 		d = d * 10;
 	}
 
-	while (d > 0)
+	for (d > 0)
 	{
 		j = n / d;
 		_putchar(j + '0');
