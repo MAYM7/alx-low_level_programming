@@ -9,15 +9,15 @@
 int main(void)
 {
 	long int number;
-	long int largest_prime_factor;
+	long int large;
 	long int i;
 
 	number = 612852475143;
-	largest_prime_factor = -1;
+	large = -1;
 
 	while (number % 2 == 0)
 	{
-		largest_prime_factor = 2;
+		large = 2;
 		number = number / 2;
 	}
 
@@ -25,14 +25,14 @@ int main(void)
 	{
 		while (number % i == 0)
 		{
-			largest_prime_factor = i;
+			large = i;
 			number = number / i;
 		}
 	}
 	if (number > 2)
-			largest_prime_factor = number;
+			large = number;
 
-	printf("%ld\n", largest_prime_factor);
+	printf("%ld\n", large);
 
 	return (0);
 }
