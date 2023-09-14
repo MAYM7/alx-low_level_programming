@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_numbers - a function that prints the numbers, from 0 to 9,
+ * print_most_numbers - a function that prints the numbers, from 0 to 9,
  * followed by a new line excipt 2 and 4.
  * Return: Always 0.
  */
@@ -11,7 +11,7 @@ void print_most_numbers(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		if (i != 2 && 4)
+		if (i != 2 && i != 4)
 		{
 			_putchar(i + '0');
 		}
