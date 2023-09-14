@@ -29,7 +29,6 @@ int main(void)
 			number = number / i;
 		}
 	}
-
 	if (number > 2)
 			largest_prime_factor = number;
 
