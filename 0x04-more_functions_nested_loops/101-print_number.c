@@ -14,7 +14,7 @@ void print_number(int n)
 		_putchar('-');
 	}
 
-	int d, j;
+	int d;
 
 	d = 1;
 	while (d <= n / 10)
@@ -24,6 +24,8 @@ void print_number(int n)
 
 	while (d > 0)
 	{
+		int j;
+
 		j = n / d;
 		_putchar(j + '0');
 		n = n % d;
