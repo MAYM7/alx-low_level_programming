@@ -19,14 +19,14 @@ void print_number(int n)
 	d = 1;
 	while (d <= n / 10)
 	{
-		d *= 10;
+		d = d * 10;
 	}
 
 	while (d > 0)
 	{
 		j = n / d;
 		_putchar(j + '0');
-		n %= d;
-		d /= 10;
+		n = n % d;
+		d = d / 10;
 	}
 }
