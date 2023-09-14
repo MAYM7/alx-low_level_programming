@@ -4,6 +4,7 @@
  * print_number - a function that prints an integer.
  * @n: integer to be printed
  */
+
 void print_number(int n)
 {
 	if (n < 0)
@@ -14,8 +15,7 @@ void print_number(int n)
 
 	int d;
 
-	d = 1;
-	while (d < n / 10)
+	while (d = 1; d < n / 10)
 	{
 		d = d * 10;
 	}
