@@ -8,28 +8,32 @@
  */
 int main(void)
 {
-	long int number = 612852475143;
-	long int largest_prime_factor = -1;
+	long int number;
+	long int largest_prime_factor;
+	long int i;
+
+	number = 612852475143
+	largest_prime_factor = -1
 
 	while (number % 2 == 0)
 	{
 		largest_prime_factor = 2;
-		number /= 2;
+		number = number / 2;
 	}
 
-	for (long int i = 3; i <= sqrt(number); i += 2)
+	for (i = 3; i <= sqrt(number); i = i + 2)
 	{
 		while (number % i == 0)
 		{
 			largest_prime_factor = i;
-			number /= i;
+			number = number / i;
 		}
 	}
 
 	if (number > 2)
-	{
 			largest_prime_factor = number;
-	}
+
 	printf("%ld\n", largest_prime_factor);
-		return (0);
+
+	return (0);
 }
