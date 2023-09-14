@@ -16,7 +16,8 @@ void print_number(int n)
 	
 	int d, j;
 
-	for (d = 1; d <= n /10)
+	d = 1;
+	for (d <= n /10)
 	{
 		d *= 10;
 	}
