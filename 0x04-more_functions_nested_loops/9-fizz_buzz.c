@@ -25,6 +25,10 @@ int main(void)
 		{
 			printf(" FizzBuzz");
 		}
+		else if (i == 1)
+		{
+			printf("%d", i);
+		}
 		else
 		{
 			printf(" %d", i);
