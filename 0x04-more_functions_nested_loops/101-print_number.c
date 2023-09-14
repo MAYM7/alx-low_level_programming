@@ -23,8 +23,11 @@ void print_number(int n)
 	for (d > 0)
 	{
 		j = n / d;
+
 		_putchar(j + '0');
+
 		n = n % d;
+
 		d = d / 10;
 	}
 }
