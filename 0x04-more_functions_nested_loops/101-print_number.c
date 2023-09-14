@@ -13,17 +13,15 @@ void print_number(int n)
 		_putchar('-');
 	}
 
-	int d;
+	int d, j;
 
-	while (d = 1; d < n / 10)
+	while (d = 1; d <= n / 10)
 	{
 		d = d * 10;
 	}
 
 	while (d > 0)
 	{
-		int j;
-
 		j = n / d;
 		_putchar(j + '0');
 		n = n % d;
