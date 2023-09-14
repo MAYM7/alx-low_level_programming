@@ -12,8 +12,8 @@ int main(void)
 	long int largest_prime_factor;
 	long int i;
 
-	number = 612852475143
-	largest_prime_factor = -1
+	number = 612852475143;
+	largest_prime_factor = -1;
 
 	while (number % 2 == 0)
 	{
