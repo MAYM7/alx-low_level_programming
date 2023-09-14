@@ -4,30 +4,30 @@
  * print_number - a function that prints an integer.
  * @n: integer to be printed
  */
+#include "main.h"
 
+/**
+ * print_number - prints an integer
+ * @n: integer to be printed
+ */
 void print_number(int n)
 {
+	unsigned int n2;
+
 	if (n < 0)
 	{
-		n = -n;
+		n2 = -n;
 		_putchar('-');
 	}
-
-	int d, j;
-
-	while (d = 1; d <= n / 10)
+	else
 	{
-		d = d * 10;
+		n2 = n;
 	}
 
-	while (d > 0)
+	if (n2 / 10)
 	{
-		j = n / d;
-
-		_putchar(j + '0');
-
-		n = n % d;
-
-		d = d / 10;
+		print_number(n2 / 10);
 	}
+
+	_putchar((n2 % 10) + '0');
 }
