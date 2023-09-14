@@ -8,31 +8,31 @@
  */
 int main(void)
 {
-	long int number;
-	long int large;
+	long int n;
+	long int l;
 	long int i;
 
-	number = 612852475143;
-	large = -1;
+	n = 612852475143;
+	l = -1;
 
-	while (number % 2 == 0)
+	while (n % 2 == 0)
 	{
-		large = 2;
-		number = number / 2;
+		l = 2;
+		n = n / 2;
 	}
 
-	for (i = 3; i <= sqrt(number); i = i + 2)
+	for (i = 3; i <= sqrt(n); i = i + 2)
 	{
-		while (number % i == 0)
+		while (n % i == 0)
 		{
-			large = i;
-			number = number / i;
+			l = i;
+			n = n / i;
 		}
 	}
-	if (number > 2)
-			large = number;
-
-	printf("%ld\n", large);
-
+	if (n > 2)
+	{
+		l = n;
+		printf("%ld\n", l);
+	}
 	return (0);
 }
