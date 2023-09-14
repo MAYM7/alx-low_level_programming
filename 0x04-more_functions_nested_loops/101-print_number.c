@@ -13,11 +13,11 @@ void print_number(int n)
 		n = -n;
 		_putchar('-');
 	}
-	
+
 	int d, j;
 
 	d = 1;
-	while (d <= n /10)
+	while (d <= n / 10)
 	{
 		d *= 10;
 	}
