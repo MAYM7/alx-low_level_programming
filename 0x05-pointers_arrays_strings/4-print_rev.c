@@ -9,9 +9,9 @@ void print_rev(char *s)
 {
 	int i;
 
-	while (s[i] != '\0')
+	while (i = 0; s[i] != '\0')
 	{
-	i++
+	i++;
 	}
 	for (i = i; str[i] != '\0'; i--)
 	{
