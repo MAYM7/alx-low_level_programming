@@ -8,16 +8,12 @@
 char *rot13(char *str)
 {
 	int i, j;
-	char alph[26] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
-	'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
-	'u', 'v', 'w', 'x', 'y', 'z'};
-	char rot[26] = {'n', 'o', 'p', 'q', 'r', 's', 't',
-		'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f',
-	'g', 'h', 'i', 'j', 'k', 'l', 'm'};
+	char alph[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char rot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (j = 0; j <= 26; j++)
+		for (j = 0; alph[j] != '\0'; j++)
 		{
 		if (str[i] == alph[j])
 		{
