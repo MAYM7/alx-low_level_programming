@@ -11,13 +11,10 @@ char *rot13(char *str)
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		if (str[i] >= 'a' && str[i] <= 'm')
+		str[i] = str[i] + 13;
+		if (str[i] > 'z')
 		{
-			str[i] = str[i] + 13;
-		}
-		else
-		{
-			str[i] = str[i] - 13;
+			str[i] = str[i] - 26;
 		}
 	}
 	return (str);
