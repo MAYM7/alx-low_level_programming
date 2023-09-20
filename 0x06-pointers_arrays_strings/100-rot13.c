@@ -14,7 +14,7 @@ char *rot13(char *str)
 		str[i] = str[i] + 13;
 		if (str[i] > 'z')
 		{
-			str[i] = str[i] - 26;
+			str[i] = str[i] - 25;
 		}
 	}
 	return (str);
