@@ -15,7 +15,7 @@ char *_strchr(char *s, char c)
 	{
 		if (s[i] == c)
 		{
-			while (i != '\0')
+			while (s[i] != '\0')
 			{
 				j = 0;
 				s[i] = temp[j];
