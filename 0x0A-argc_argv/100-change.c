@@ -40,7 +40,9 @@ int main(int agrc, char *agrv[])
 				j++;
 			}
 			if (i == 1)
+			{
 				j++;
+			}
 			printf("%d\n", j);
 			return (0);
 }
