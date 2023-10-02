@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int sum = 0, i;
-	char find_letter;
+	char *find_letter;
 
 	if (argc == 1)
 	{
