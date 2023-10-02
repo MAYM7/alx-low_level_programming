@@ -10,13 +10,9 @@
  **/
 int main(int argc, char *argv[])
 {
-	int sum = 0, i;
-	char *find_letter;
+	int i, suma = 0, res = 0;
+	char c[] = "Error", *find_letter;
 
-	if (argc == 1)
-	{
-		printf("%d\n", 0);
-	}
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
@@ -26,14 +22,17 @@ int main(int argc, char *argv[])
 			{
 				if (*find_letter < 47 || *find_letter > 57)
 				{
-					printf("%s\n", "Error");
+					printf("%s\n", c);
 					return (1);
 				}
 				find_letter++;
 			}
-			sum += atoi(argv[i]);
+			res = atoi(argv[i]);
+			suma += res;
 		}
-		printf("%d\n", sum);
-		return (0);
+		printf("%d\n", suma);
 	}
+	else
+		printf("%d\n", 0);
+	return (0);
 }
