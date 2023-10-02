@@ -7,13 +7,13 @@
  * @argc: num of arguments.
  * @argv: string og arguments.
  * Return: 1 if num of arguments not exatly 1, else 0.
- */
+ **/
 
 int main(int agrc, char *agrv[])
 {
 	int i, j = 0;
 
-	if (agrc < 2)
+	if (agrc != 2)
 	{
 		printf("%s\n", "Error");
 		return (1);
