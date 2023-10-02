@@ -18,15 +18,6 @@ int main(int agrc, char *agrv[])
 		printf("%s\n", "Error");
 		return (1);
 	}
-	if (agrc >= 2)
-	{
-		if (atoi(agrv[1]) < 1)
-		{
-			printf("%d\n", 0);
-			return (0);
-		}
-		else
-		{
 			i = atoi(agrv[1]);
 			while (i >= 25)
 			{
@@ -48,13 +39,8 @@ int main(int agrc, char *agrv[])
 				i -= 2;
 				j++;
 			}
-			while (i >= 1)
-			{
-				i -= 1;
+			if (i == 1)
 				j++;
-			}
 			printf("%d\n", j);
 			return (0);
-		}
-	}
 }
