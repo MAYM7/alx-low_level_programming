@@ -9,40 +9,39 @@
  * Return: always 0
  **/
 
-int main(int agrc, char *agrv[])
+int main(int argc, char *argv[])
 {
-	int i, j = 0;
+	int dev = 0, coins = 0;
+	char c[] = "Error";
 
-	if (agrc != 2)
+	if (argc != 2)
 	{
-		printf("%s\n", "Error");
+		printf("%s\n", c);
 		return (1);
 	}
-			i = atoi(agrv[1]);
-			while (i >= 25)
-			{
-				i -= 25;
-				j++;
-			}
-			while (i >= 10)
-			{
-				i -= 10;
-				j++;
-			}
-			while (i >= 5)
-			{
-				i -= 5;
-				j++;
-			}
-			while (i >= 2)
-			{
-				i -= 2;
-				j++;
-			}
-			if (i == 1)
-			{
-				j++;
-			}
-			printf("%d\n", j);
-			return (0);
+	dev = atoi(argv[1]);
+	while (dev >= 25)
+	{
+		dev -= 25;
+		coins++;
+	}
+	while (dev >= 10)
+	{
+		dev -= 10;
+		coins++;
+	}
+	while (dev >= 5)
+	{
+		dev -= 5;
+		coins++;
+	}
+	while (dev >= 2)
+	{
+		dev -= 2;
+		coins++;
+	}
+	if (dev == 1)
+		coins++;
+	printf("%d\n", coins);
+	return (0);
 }
