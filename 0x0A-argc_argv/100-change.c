@@ -19,6 +19,8 @@ int main(int agrc, char *agrv[])
 		return (1);
 	}
 			i = atoi(agrv[1]);
+			if (i < 0)
+				printf("%d\n", 0);
 			while (i >= 25)
 			{
 				i -= 25;
