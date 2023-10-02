@@ -39,7 +39,7 @@ int main(int agrc, char *agrv[])
 				i -= 2;
 				j++;
 			}
-			else if (i == 1)
+			if (i == 1)
 				j++;
 			printf("%d\n", j);
 			return (0);
