@@ -39,10 +39,8 @@ int main(int agrc, char *agrv[])
 				i -= 2;
 				j++;
 			}
-			if (i == 1)
+			else if (i == 1)
 				j++;
-			else if (i < 0)
-				printf("%d\n", 0);
 			printf("%d\n", j);
 			return (0);
 }
