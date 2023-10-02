@@ -6,16 +6,25 @@
  * @argc: number of arguments
  * @argv: array with the arguments
  *
- * Return: always 0
+ * Return: 0 when given two number, else returns 1. 
  **/
 int main(int argc, char *argv[])
 {
 	int i = 1, sum = 0;
 
-	while (i < argc)
+	if (argc == 3)
 	{
-		sum = sum * atoi(argv[i]);
-		i++;
+		while (i < argc)
+		{
+			sum = sum * atoi(argv[i]);
+			i++;
+		}
+		printf("%d\n", sum);
+		return (0);
 	}
-	printf("%d\n", sum);
+	else
+	{
+		printf("Error\n");
+		return (1);
+	}
 }
