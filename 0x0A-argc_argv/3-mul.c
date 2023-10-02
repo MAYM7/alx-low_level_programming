@@ -10,16 +10,12 @@
  **/
 int main(int argc, char *argv[])
 {
-	int i = 1, sum = 0;
+	int mult;
 
 	if (argc == 3)
 	{
-		while (i < argc)
-		{
-			sum = sum * atoi(argv[i]);
-			i++;
-		}
-		printf("%d\n", sum);
+		mult = atoi(argv[1]) * atoi(argv[2]);
+		printf("%d\n", mult);
 		return (0);
 	}
 	else
