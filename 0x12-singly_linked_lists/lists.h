@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef LISTS_H
+#define LISTS_H
 
 #include <stddef.h>
 
@@ -10,7 +10,8 @@
  * @next: points to the next node
  *
  * Description: singly linked list node structure
- */
+ **/
+
 typedef struct list_s
 {
 	char *str;
