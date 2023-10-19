@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stddef.h> 
+#include <stddef.h>
 
 /**
  * struct list_s - a singly linked list
