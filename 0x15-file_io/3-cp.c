@@ -2,6 +2,7 @@
 #include "main.h"
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <unistd.h>
 
 /**
  * check_arg - checks for the correct number of arguments
